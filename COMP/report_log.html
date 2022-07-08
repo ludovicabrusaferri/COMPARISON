@@ -5,7 +5,7 @@
 <link REL=stylesheet TYPE=text/css href=.files/fsl.css>
 <TITLE>FSL</TITLE></HEAD><BODY><OBJECT data=report.html></OBJECT>
 <h2>Progress Report / Log</h2>
-Started at Sat Jul  2 12:27:23 EDT 2022<p>
+Started at Thu Jul  7 14:32:52 EDT 2022<p>
 <pre>
 
 cp -r ../.files .files
@@ -1896,35 +1896,35 @@ Log directory was: stats0090
 /autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/fslmaths stats/zstat1 -mas mask thresh_zstat1
 
 echo 228483 > thresh_zstat1.vol
-zstat1: DLH=0.0225556 VOLUME=228483 RESELS=205.717
+zstat1: DLH=nan VOLUME=228483 RESELS=nan
 
 /autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/fslmaths stats/zstat2 -mas mask thresh_zstat2
 
 echo 228483 > thresh_zstat2.vol
-zstat2: DLH=0.0225556 VOLUME=228483 RESELS=205.717
+zstat2: DLH=nan VOLUME=228483 RESELS=nan
 
-/autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/cluster -i thresh_zstat1 -t 2.3 --othresh=thresh_zstat1 -o cluster_mask_zstat1 --connectivity=26 --mm --olmax=lmax_zstat1_std.txt --scalarname=Z -p 0.05 -d 0.0225556 --volume=228483 -c stats/cope1 > cluster_zstat1_std.txt
+/autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/cluster -i thresh_zstat1 -t 2.3 --othresh=thresh_zstat1 -o cluster_mask_zstat1 --connectivity=26 --mm --olmax=lmax_zstat1_std.txt --scalarname=Z -p 0.05 -d nan --volume=228483 -c stats/cope1 > cluster_zstat1_std.txt
 
 /autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/cluster2html . cluster_zstat1 -std
 
-/autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/cluster -i thresh_zstat2 -t 2.3 --othresh=thresh_zstat2 -o cluster_mask_zstat2 --connectivity=26 --mm --olmax=lmax_zstat2_std.txt --scalarname=Z -p 0.05 -d 0.0225556 --volume=228483 -c stats/cope2 > cluster_zstat2_std.txt
+/autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/cluster -i thresh_zstat2 -t 2.3 --othresh=thresh_zstat2 -o cluster_mask_zstat2 --connectivity=26 --mm --olmax=lmax_zstat2_std.txt --scalarname=Z -p 0.05 -d nan --volume=228483 -c stats/cope2 > cluster_zstat2_std.txt
 
 /autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/cluster2html . cluster_zstat2 -std
 
 /autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/fslstats thresh_zstat1 -l 0.0001 -R 2>/dev/null
-2.300026 4.672727 
+2.300372 3.910562 
 
 /autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/fslstats thresh_zstat2 -l 0.0001 -R 2>/dev/null
-0.000000 0.000000 
-Rendering using zmin=2.300026 zmax=4.672727
+2.300028 3.503355 
+Rendering using zmin=2.300028 zmax=3.910562
 
-/autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/overlay 1 0 example_func -a thresh_zstat1 2.300026 4.672727 rendered_thresh_zstat1
+/autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/overlay 1 0 example_func -a thresh_zstat1 2.300028 3.910562 rendered_thresh_zstat1
 
 /autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/slicer rendered_thresh_zstat1 -S 2 750 rendered_thresh_zstat1.png
 
 /bin/cp /autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//etc/luts/ramp.gif .ramp.gif
 
-/autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/overlay 1 0 example_func -a thresh_zstat2 2.300026 4.672727 rendered_thresh_zstat2
+/autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/overlay 1 0 example_func -a thresh_zstat2 2.300028 3.910562 rendered_thresh_zstat2
 
 /autofs/cluster/pubsw/2/pubsw/Linux2-2.3-x86_64/packages/fsl.64bit/5.0.10//bin/slicer rendered_thresh_zstat2 -S 2 750 rendered_thresh_zstat2.png
 </pre><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></BODY></HTML>
